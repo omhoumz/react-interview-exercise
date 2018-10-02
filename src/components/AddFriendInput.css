@@ -1,6 +1,23 @@
+:local(.addFriendInputWrapper) {
+  position: relative;
+}
 :local(.addFriendInput) {
   border-radius: 0;
   border-color: #ABAAAA;
   border-left: 0;
   border-right: 0;
+}
+:local(.addFriendGender) {
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+:local(.addFriendGender > label) {
+  margin-left: 0 !important;
+}
+:local(.addFriendGender input[type=radio]) {
+  height: 10px;
+  margin-left: -15px;
+  border-color: transparent;
 }

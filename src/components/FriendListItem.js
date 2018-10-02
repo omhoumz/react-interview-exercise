@@ -10,7 +10,7 @@ class FriendListItem extends Component {
         <div className={styles.friendInfos}>
           <div><span>{this.props.name}</span></div>
           <div>
-            <small>xx friends in common</small>
+            <small>xx friends in common - <em>{this.props.gender}</em></small>
           </div>
         </div>
         <div className={styles.friendActions}>
