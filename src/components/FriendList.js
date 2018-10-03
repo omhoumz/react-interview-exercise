@@ -11,7 +11,7 @@ class FriendList extends Component {
             return (
               <FriendListItem
                 key={index}
-                id={index}
+                id={index + this.props.pageOffsetsId }
                 name={friend.name}
                 gender={friend.gender}
                 starred={friend.starred}
@@ -27,7 +27,8 @@ class FriendList extends Component {
 
 FriendList.propTypes = {
   friends: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
+  pageOffsetsId: PropTypes.number.isRequired
 };
 
 export default FriendList;

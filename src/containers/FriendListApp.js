@@ -28,7 +28,7 @@ class FriendListApp extends Component {
         <h1>The FriendList</h1>
         <AddFriendInput addFriend={actions.addFriend} />
         <Pagination friendsCount={friendsCount} navigateToPage={this.navigateToPage.bind(this)} />
-        <FriendList friends={friendsToDisplayById} actions={actions} />
+        <FriendList friends={friendsToDisplayById} actions={actions} pageOffsetsId={sliceStart} />
       </div>
     );
   }
