@@ -43,7 +43,7 @@ class AddFriendInput extends Component {
     super(props, context);
     this.state = {
       name: this.props.name || '',
-      gender: this.props.gender || ''
+      gender: this.props.gender || 'female'
     };
   }
 
