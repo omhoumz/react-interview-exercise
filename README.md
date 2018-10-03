@@ -8,4 +8,4 @@ yarn start
 open http://localhost:3000
 ```
 
-
+[Go to exercice page](https://github.com/ayoubice/react-interview-exercise "Exercice page")
