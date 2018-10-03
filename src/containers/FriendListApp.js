@@ -15,8 +15,6 @@ class FriendListApp extends Component {
 
     const friendsToDisplayById = friendsById.slice(sliceStart, sliceEnd);
 
-    console.log(sliceStart, sliceStart+1)
-
     const actions = {
       addFriend: this.props.addFriend,
       deleteFriend: this.props.deleteFriend,

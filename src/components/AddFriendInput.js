@@ -54,6 +54,9 @@ class AddFriendInput extends Component {
   handleSubmit (e) {
     e.preventDefault();
     const { name, gender } = this.state
+    if(name === ''){
+      return;
+    }
     this.props.addFriend({ name, gender });
     this.setState({ name: '', gender: '' });
   }
